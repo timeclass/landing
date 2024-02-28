@@ -1,12 +1,3 @@
-
-/*!
- * Webflow: Front-end site library
- * @license MIT
- * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
- */
-
 (() => {
   var __create = Object.create;
   var __defProp = Object.defineProperty;
@@ -48236,6 +48227,15 @@
             afterSubmit(data);
             return;
           }
+          
+          var email = $('#Email-5').val();
+          email = !email ? $('#Email').val() : email;
+          var emailChimp = $('#mce-EMAIL').val(email);
+          $('#mc-embedded-subscribe-form').submit();
+          data.success = true;
+          afterSubmit(data);
+
+          /*
           $2.ajax({
             url: formUrl,
             type: "POST",
@@ -48250,6 +48250,7 @@
           }).fail(function() {
             afterSubmit(data);
           });
+          */
         };
       }
     }
@@ -48287,7 +48288,7 @@
         };
         function init2() {
           siteId = $2("html").attr("data-wf-site");
-          formUrl = "https://webflow.com/api/v1/form/" + siteId;
+          formUrl = "https://webflow2.com/api/v1/form/" + siteId;
           if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
             formUrl = formUrl.replace("https://webflow.com", "https://formdata.webflow.com");
           }
@@ -48530,12 +48531,12 @@
         }
         function afterSubmit(data) {
           var form = data.form;
-          var redirect = data.redirect;
+          //var redirect = data.redirect;
           var success = data.success;
-          if (success && redirect) {
+          /*if (success && redirect) {
             Webflow.location(redirect);
             return;
-          }
+          }*/
           data.done.toggle(success);
           data.fail.toggle(!success);
           if (success) {
