@@ -4394,8 +4394,8 @@ blockquote {
 
 .brand-logo {
   height: 100%;
-  max-height: 30px;
-  max-width: 150px;
+  max-height: 100px;
+  max-width: 250px;
 }
 
 .brand-link {
