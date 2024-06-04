@@ -12,6 +12,10 @@ HorárioFacil
 
 -----
 
+https://escolas.com.br/
+
+https://qedu.org.br/brasil/busca
+
 https://www.reddit.com/r/brdev/comments/154dn3v/nicho_de_saas_emergentes_ou_pouco_explorados_do/?rdt=60304
 
 https://timefold.ai/blog/optaplanner-fork
