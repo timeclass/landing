@@ -29,3 +29,11 @@ https://horario.com.br/
 https://www.cronostimetable.com/#pricing
 
 https://www.horariofacil.com/main/precos
+
+https://powercubus.com.br/
+
+https://www.untis.at/en
+
+https://www.ischolar.com.br/
+
+https://www.academic.com.br/
